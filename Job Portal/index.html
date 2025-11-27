@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board | Find Your Dream Job</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href=".cpp">
+  <script src="server.js"></script>
+  
+</head>
+<body>
+  <header>
+    <div class="container nav"><link rel="stylesheet" href="style.css">
+      <h1 class="logo">Job<span>Connect</span></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="#">Employers</a></li>
+          <li><a href="#">Candidates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn-login">Login</button>
+    </div>
+  </header>
+  <script src="model/applications.js"></script>
+  <script src="model/job.js"></script>
+  <script src="model/user.js"></script>
+  <script src="routes/job/email.js"></script>
+  <script src="routes/job/resume.js"></script>
+  <script src="routes/job/routes.js"></script>
+  <script src="routes/auth.js"></script>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find Your Dream Job Today</h2>
+      <p>Browse thousands of job listings from top companies worldwide.</p>
+      <div class="search-box">
+        <input type="text" placeholder="Job title or keyword">
+        <input type="text" placeholder="Location">
+        <button>Search Jobs</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <h2>Featured Jobs</h2>
+      <div class="job-grid">
+        <div class="job-card">
+          <h3>Frontend Developer</h3>
+          <p>Company: TechNova</p>
+          <p>Location: Mumbai, India</p>
+          <a href="job-detail.html" class="btn">View Details</a>
+        </div>
+        <div class="job-card">
+          <h3>Data Analyst</h3>
+          <p>Company: DataVision</p>
+          <p>Location: Pune, India</p>
+          <a href="job-detail.html" class="btn">View Details</a>
+        </div>
+        <div class="job-card">
+          <h3>UI/UX Designer</h3>
+          <p>Company: CreativeHub</p>
+          <p>Location: Remote</p>
+          <a href="job-detail.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container footer-content">
+      <p>&copy; 2025 JobConnect. All rights reserved.</p>
+      <p>Email: support@jobconnect.com | Phone: +91 98765 43210</p>
+    </div>
+  </footer>
+</body>
+</html>
